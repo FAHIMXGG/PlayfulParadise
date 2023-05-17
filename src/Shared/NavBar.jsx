@@ -71,6 +71,8 @@ const NavBar = () => {
                 </div>
                 <Navbar.Collapse className=' text-[#D4F1F4]'>
                     <ActiveLink to="/">Home</ActiveLink>
+                    <ActiveLink to="/allToys">All Toys</ActiveLink>
+                    <ActiveLink to="/myToys">My Toys</ActiveLink>
 
                     <ActiveLink to="/blog">Blog</ActiveLink>
                     <ActiveLink to="/about">About</ActiveLink>
