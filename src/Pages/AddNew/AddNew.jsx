@@ -14,7 +14,7 @@ const AddNew = () => {
         const photo = form.photo.value;
         const ProductName = form.name.value;
         const sellerName = user.displayName
-        const sellerEmail = user.email
+        const email = user.email
         const subCategory = form.subCategory.value;
         const price = parseFloat(form.price.value);
         const rating = form.rating.value;
@@ -22,7 +22,7 @@ const AddNew = () => {
         const description = form.description.value;
 
 
-        const newToys = { photo, ProductName, sellerEmail, sellerName, subCategory, price, rating, quantity, description }
+        const newToys = { photo, ProductName, email, sellerName, subCategory, price, rating, quantity, description }
 
 
 
