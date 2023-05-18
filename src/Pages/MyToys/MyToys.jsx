@@ -5,7 +5,7 @@ import UserToys from './UserToys';
 import Swal from 'sweetalert2'
 
 const MyToys = () => {
-    const {user} = useContext(AuthContext);
+    const { user } = useContext(AuthContext);
     const [toys, setToys] = useState([]);
 
 
@@ -43,8 +43,10 @@ const MyToys = () => {
     console.log(toys)
     return (
         <div>
-            <h1>gg</h1>
-            <Link to="/addNew">Add New</Link>
+
+            <div className='mx-32 mb-5 mt-10 flex justify-end'>
+                <Link to="/addNew"><button className='bg-[#75E6DA] font-semibold px-3 py-2 rounded-lg'>Add New</button></Link>
+            </div>
             <div>
                 {
                     toys.map(toy => <UserToys

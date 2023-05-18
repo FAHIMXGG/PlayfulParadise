@@ -13,7 +13,8 @@ const UserToys = ({ toy, handleDelete }) => {
                         <h1 className='font-medium'>{ProductName}</h1>
                     </div>
                     <div className='flex items-center gap-5'>
-                        <Link><button className='bg-[#75E6DA] font-semibold px-3 py-2 rounded-lg '>Update</button></Link>
+                        <Link to={`/updateToys/${_id}`}
+                        ><button className='bg-[#75E6DA] font-semibold px-3 py-2 rounded-lg '>Update</button></Link>
                         <Link><button onClick={() => handleDelete(_id)} className='bg-[#75E6DA] font-semibold px-3 py-2 rounded-lg '>Delete</button></Link>
                     </div>
                 </div>
