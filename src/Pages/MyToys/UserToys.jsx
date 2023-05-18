@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const UserToys = ({ toy }) => {
+const UserToys = ({ toy, handleDelete }) => {
 
     const { _id, photo, ProductName, sellerEmail, sellerName, subCategory, price, rating, quantity, description } = toy
     return (
@@ -14,7 +14,7 @@ const UserToys = ({ toy }) => {
                     </div>
                     <div className='flex items-center gap-5'>
                         <Link><button className='bg-[#75E6DA] font-semibold px-3 py-2 rounded-lg '>Update</button></Link>
-                        <Link><button className='bg-[#75E6DA] font-semibold px-3 py-2 rounded-lg '>Delete</button></Link>
+                        <Link><button onClick={() => handleDelete(_id)} className='bg-[#75E6DA] font-semibold px-3 py-2 rounded-lg '>Delete</button></Link>
                     </div>
                 </div>
             </div>
