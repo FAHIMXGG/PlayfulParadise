@@ -15,13 +15,13 @@ const NavBar = () => {
 
     return (
         <div className=' '>
-            <Navbar className=' bg-[#189AB4]'
+            <Navbar className=' '
                 fluid={true}
                 rounded={true}
             >
                 <Navbar.Brand href="https://github.com/FAHIMXGG">
 
-                    <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white md:ml-16  font-mono text-[#D4F1F4]">
+                    <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white md:ml-16  font-mono text-[#05445E]">
                         PlayfulParadise
                     </span>
                 </Navbar.Brand>
@@ -69,7 +69,7 @@ const NavBar = () => {
                     }
 
                 </div>
-                <Navbar.Collapse className=' text-[#D4F1F4]'>
+                <Navbar.Collapse className=' text-[#05445E]'>
                     <ActiveLink to="/">Home</ActiveLink>
                     <ActiveLink to="/allToys">All Toys</ActiveLink>
                     <ActiveLink to="/myToys">My Toys</ActiveLink>

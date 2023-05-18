@@ -76,7 +76,7 @@ const Login = () => {
 
                         />
                     </div>
-                    <TextInput className='border-red-400'
+                    <TextInput className=''
                         id="email1"
                         type="email"
                         name='email'
@@ -112,12 +112,12 @@ const Login = () => {
                     No Account? <Link className='text-orange-400 font-bold' to="/reg">Register</Link> <br />
                     <p>Or Login with Google or GitHub</p>
                 </p></div>
-                <Button className='bg-[#75E6DA] text-[#05445E] hover:bg-[#B1D4E0]' type="submit">
+                <button className='py-2 rounded font-bold bg-[#75E6DA] text-[#05445E] hover:bg-[#B1D4E0]' type="submit">
                     Submit
-                </Button>
-                <div className='flex gap-3 justify-center'>
-                    <Button className='bg-[#75E6DA] text-[#05445E] hover:bg-[#B1D4E0]' onClick={handleGoogleSignIn}>Google</Button>
-                    <Button className='bg-[#75E6DA] text-[#05445E] hover:bg-[#B1D4E0]' onClick={handleGitHubSignIn}>GitHub</Button>
+                </button>
+                <div className='flex gap-3 justify-center text-[#05445E]'>
+                    <button className='py-2 rounded font-bold px-3 bg-[#75E6DA]  hover:bg-[#B1D4E0]' onClick={handleGoogleSignIn}>Google</button>
+                    <button className='py-2 rounded font-bold px-3 bg-[#75E6DA]  hover:bg-[#B1D4E0]' onClick={handleGitHubSignIn}>GitHub</button>
                 </div>
             </form>
             
