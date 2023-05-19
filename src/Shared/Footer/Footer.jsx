@@ -2,10 +2,10 @@ import React from 'react';
 
 const Footer = () => {
     return (
-        <div>
+        <div className=''>
             
-            <footer className="bg-neutral-900 text-center text-white">
-                <div className="container px-6 pt-6">
+            <footer className="bg-[#05445E] text-center text-white">
+                <div className=" px-6 pt-6">
                     
                     <div className="mb-6 flex justify-center">
                         <a
@@ -53,8 +53,8 @@ const Footer = () => {
                                 viewBox="0 0 24 24">
                                 <path
                                     d="M7 11v2.4h3.97c-.16 1.029-1.2 3.02-3.97 3.02-2.39 0-4.34-1.979-4.34-4.42 0-2.44 1.95-4.42 4.34-4.42 1.36 0 2.27.58 2.79 1.08l1.9-1.83c-1.22-1.14-2.8-1.83-4.69-1.83-3.87 0-7 3.13-7 7s3.13 7 7 7c4.04 0 6.721-2.84 6.721-6.84 0-.46-.051-.81-.111-1.16h-6.61zm0 0 17 2h-3v3h-2v-3h-3v-2h3v-3h2v3h3v2z"
-                                    fill-rule="evenodd"
-                                    clip-rule="evenodd" />
+                                    fillRule="evenodd"
+                                    clipRule="evenodd" />
                             </svg>
                         </a>
 
@@ -122,11 +122,11 @@ const Footer = () => {
                                 <div className="relative md:mb-6" data-te-input-wrapper-init>
                                     <input
                                         type="text"
-                                        className="peer block min-h-[auto] w-full rounded border-0 bg-transparent px-3 py-[0.32rem] leading-[1.6] text-neutral-200 outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                                        className=" border-[#75E6DA]  peer block min-h-[auto] w-full rounded border-1 bg-transparent px-3 py-[0.32rem] leading-[1.6] text-neutral-200 outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 [&:not  ([data-te-input-placeholder-active])]:placeholder:opacity-0"
                                         id="exampleFormControlInput1"
                                         placeholder="Email address" />
                                     <label
-                                        for="exampleFormControlInput1"
+                                        htmlFor="exampleFormControlInput1"
                                         className="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-200 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-neutral-200 peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-neutral-200"
                                     >Email address
                                     </label>
@@ -136,7 +136,7 @@ const Footer = () => {
                                 <div className="mb-6 md:mr-auto">
                                     <button
                                         type="submit"
-                                        className="inline-block rounded border-2 border-neutral-50 px-6 pb-[6px] pt-2 text-xs font-medium uppercase leading-normal text-neutral-50 transition duration-150 ease-in-out hover:border-neutral-100 hover:bg-neutral-500 hover:bg-opacity-10 hover:text-neutral-100 focus:border-neutral-100 focus:text-neutral-100 focus:outline-none focus:ring-0 active:border-neutral-200 active:text-neutral-200 dark:hover:bg-neutral-100 dark:hover:bg-opacity-10"
+                                        className="inline-block rounded border-2 border-[#75E6DA] px-6 pb-[6px] pt-2 text-xs font-medium uppercase leading-normal text-neutral-50 transition duration-150 ease-in-out hover:border-neutral-100 hover:bg-neutral-500 hover:bg-opacity-10 hover:text-neutral-100 focus:border-neutral-100 focus:text-neutral-100 focus:outline-none focus:ring-0 active:border-neutral-200 active:text-neutral-200 dark:hover:bg-neutral-100 dark:hover:bg-opacity-10"
                                         data-te-ripple-init
                                         data-te-ripple-color="light">
                                         Subscribe
@@ -147,104 +147,74 @@ const Footer = () => {
                     </div>
 
                     
-                    <div className="mb-6">
+                    <div className="mb-6 md:px-40">
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
-                            distinctio earum repellat quaerat voluptatibus placeat nam,
-                            commodi optio pariatur est quia magnam eum harum corrupti dicta,
-                            aliquam sequi voluptate quas.
+                        Get ready to rev your engines and embark on a thrilling adventure with our incredible selection of toy cars. Whether you're a collector, an aspiring racer, or a young enthusiast, our website is the ultimate destination for all things toy cars. Discover a world of speed, excitement, and endless possibilities!
                         </p>
                     </div>
 
                     
                     <div className="grid md:grid-cols-2 lg:grid-cols-4">
                         <div className="mb-6">
-                            <h5 className="mb-2.5 font-bold uppercase">Links</h5>
+                            <h5 className="mb-2.5 font-bold uppercase">Quick Links</h5>
 
                             <ul className="mb-0 list-none">
                                 <li>
-                                    <a href="#!" className="text-white">Link 1</a>
+                                    <a href="#!" className="text-white">Home</a>
                                 </li>
                                 <li>
-                                    <a href="#!" className="text-white">Link 2</a>
+                                    <a href="#!" className="text-white">All Toys</a>
                                 </li>
-                                <li>
-                                    <a href="#!" className="text-white">Link 3</a>
-                                </li>
-                                <li>
-                                    <a href="#!" className="text-white">Link 4</a>
-                                </li>
+                                
                             </ul>
                         </div>
 
                         <div className="mb-6">
-                            <h5 className="mb-2.5 font-bold uppercase">Links</h5>
+                            <h5 className="mb-2.5 font-bold uppercase">Quick Links</h5>
 
                             <ul className="mb-0 list-none">
                                 <li>
-                                    <a href="#!" className="text-white">Link 1</a>
+                                    <a href="#!" className="text-white">My toys</a>
                                 </li>
                                 <li>
-                                    <a href="#!" className="text-white">Link 2</a>
+                                    <a href="#!" className="text-white">Add Toys</a>
                                 </li>
-                                <li>
-                                    <a href="#!" className="text-white">Link 3</a>
-                                </li>
-                                <li>
-                                    <a href="#!" className="text-white">Link 4</a>
-                                </li>
+                                
                             </ul>
                         </div>
 
                         <div className="mb-6">
-                            <h5 className="mb-2.5 font-bold uppercase">Links</h5>
+                            <h5 className="mb-2.5 font-bold uppercase">Blog</h5>
 
                             <ul className="mb-0 list-none">
                                 <li>
-                                    <a href="#!" className="text-white">Link 1</a>
+                                    <a href="#!" className="text-white">Blog</a>
                                 </li>
                                 <li>
-                                    <a href="#!" className="text-white">Link 2</a>
+                                    <a href="#!" className="text-white">Picture</a>
                                 </li>
-                                <li>
-                                    <a href="#!" className="text-white">Link 3</a>
-                                </li>
-                                <li>
-                                    <a href="#!" className="text-white">Link 4</a>
-                                </li>
+                                
                             </ul>
                         </div>
 
                         <div className="mb-6">
-                            <h5 className="mb-2.5 font-bold uppercase">Links</h5>
+                            <h5 className="mb-2.5 font-bold uppercase">Supports</h5>
 
                             <ul className="mb-0 list-none">
                                 <li>
-                                    <a href="#!" className="text-white">Link 1</a>
+                                    <a href="#!" className="text-white">Live Chat</a>
                                 </li>
                                 <li>
-                                    <a href="#!" className="text-white">Link 2</a>
+                                    <a href="#!" className="text-white">Call</a>
                                 </li>
-                                <li>
-                                    <a href="#!" className="text-white">Link 3</a>
-                                </li>
-                                <li>
-                                    <a href="#!" className="text-white">Link 4</a>
-                                </li>
+                                
                             </ul>
                         </div>
                     </div>
                 </div>
 
                
-                <div
-                    className="p-4 text-center"
-                    style="background-color: rgba(0, 0, 0, 0.2)">
-                    © 2023 Copyright:
-                    <a className="text-white" href="https://tailwind-elements.com/"
-                    >Tailwind Elements</a
-                    >
-                </div>
+                
             </footer>
         </div>
     );

@@ -7,6 +7,8 @@ import RecentlyAdded from '../Shared/RecentlyAdded/RecentlyAdded';
 import Gallery from '../Shared/Gallery/Gallery';
 import Brands from '../Shared/Brands/Brands';
 import AskedQ from '../Shared/AskedQ/AskedQ';
+import Footer from '../Shared/Footer/Footer';
+
 
 const HomeLayouts = () => {
     return (
@@ -21,6 +23,7 @@ const HomeLayouts = () => {
             <RecentlyAdded></RecentlyAdded>
 
             <Outlet></Outlet>
+            <Footer></Footer>
         </div>
     );
 };
