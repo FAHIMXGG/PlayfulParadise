@@ -22,11 +22,11 @@ const ShopByCategory = memo(() => {
     const search3 = "Truck"
 
 
-    console.log(toys)
+    //console.log(toys)
 
     return (
-        <div className='mt-10'>
-            <Tabs>
+        <div className=''>
+            <Tabs className={'mb-28'}>
                 <TabList className={"flex justify-center gap-2"}>
                     <Tab className={"bg-[#75E6DA] text-[#0C2D48] px-2 py-1 rounded font-semibold "}><button>Regular Car</button></Tab>
                     <Tab className={"bg-[#75E6DA] text-[#0C2D48] px-2 py-1 rounded font-semibold "}><button>Sports Car</button></Tab>
