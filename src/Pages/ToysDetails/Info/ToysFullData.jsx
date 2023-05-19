@@ -5,10 +5,10 @@ const ToysFullData = () => {
 
     const toysFullData = useLoaderData()
     console.log(toysFullData)
-    const { _id, photo, ProductName, sellerEmail, sellerName, subCategory, price, rating, quantity, description } = toysFullData
+    const { _id, photo, ProductName, email, sellerName, subCategory, price, rating, quantity, description } = toysFullData
 
     return (
-        <div>
+        <div className='mb-20'>
             <div className='flex justify-center'>
                 <img className='md:w-3/12' src={photo} alt="" />
             </div>
@@ -24,7 +24,7 @@ const ToysFullData = () => {
                             Seller Name: {sellerName}
                         </h1>
                         <h1>
-                            Seller Email: {sellerEmail}
+                            Seller Email: {email}
                         </h1>
                     </div>
                     <div className='flex justify-between font-semibold'>
@@ -43,9 +43,9 @@ const ToysFullData = () => {
                             Price: {price}$
                         </h1>
                     </div>
-                    <div className='flex justify-center mt-10'>
-                        <h1>
-                            <span className='font-semibold text-[#189AB4]'>Description:</span> {description}
+                    <div className='flex justify-center mt-10 '>
+                        <h1 className='mb-16'>
+                            <span className=' font-semibold text-[#189AB4]'>Description:</span> {description}
                         </h1>
                     </div>
                 </div>

@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { AuthContext } from '../../provider/AuthProvider';
 import UserToys from './UserToys';
 import Swal from 'sweetalert2'
+import Footer from '../../Shared/Footer/Footer';
 
 const MyToys = () => {
     const { user } = useContext(AuthContext);
@@ -47,7 +48,7 @@ const MyToys = () => {
             <div className='mx-32 mb-5 mt-10 flex justify-end'>
                 <Link to="/addNew"><button className='bg-[#75E6DA] font-semibold px-3 py-2 rounded-lg'>Add New</button></Link>
             </div>
-            <div>
+            <div className='mb-20'>
                 {
                     toys.map(toy => <UserToys
                         key={toy._id}
@@ -57,6 +58,7 @@ const MyToys = () => {
                     ></UserToys>)
                 }
             </div>
+            <Footer></Footer>
         </div>
     );
 };

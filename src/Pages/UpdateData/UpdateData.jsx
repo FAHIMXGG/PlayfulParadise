@@ -3,6 +3,7 @@ import React, { useContext } from 'react';
 import Swal from 'sweetalert2'
 import { AuthContext } from '../../provider/AuthProvider';
 import { useLoaderData } from 'react-router-dom';
+import Footer from '../../Shared/Footer/Footer';
 
 
 const UpdateData = () => {
@@ -61,6 +62,7 @@ const UpdateData = () => {
 
     return (
         <div>
+            <div className='mb-20 mx-52'>
             <form onSubmit={handleUpdateToys} className="flex flex-col gap-4">
                 <div>
                     <div className="mb-2 block">
@@ -258,6 +260,8 @@ const UpdateData = () => {
                     Submit
                 </Button>
             </form>
+            </div>
+            <Footer></Footer>
         </div>
     );
 };

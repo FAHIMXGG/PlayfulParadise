@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import AllToysInfo from './AllToysInfo/AllToysInfo';
 import { Link, Outlet } from 'react-router-dom';
 import NavBar from '../../Shared/NavBar';
+import Footer from '../../Shared/Footer/Footer';
 
 const AllToys = () => {
     const [toys, setToys] = useState([]);
@@ -53,7 +54,7 @@ const AllToys = () => {
                 </div>
             </div>
 
-            <div className='grid lg:grid-cols-4 gap-10 lg:px-28 mt-6 p-5'>
+            <div className='grid lg:grid-cols-4 gap-10 lg:px-28 mt-6 p-5 mb-20'>
                 {
                     toys.filter((item) => {
                         return search === '' ? item : item.subCategory.includes(search)
@@ -65,6 +66,7 @@ const AllToys = () => {
                 }
             </div>
             <Outlet></Outlet>
+            <Footer></Footer>
         </div>
     );
 };

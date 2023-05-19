@@ -2,6 +2,7 @@ import { Button, Label, Select, TextInput, Textarea } from 'flowbite-react';
 import React, { useContext } from 'react';
 import Swal from 'sweetalert2'
 import { AuthContext } from '../../provider/AuthProvider';
+import Footer from '../../Shared/Footer/Footer';
 
 const AddNew = () => {
     const { user } = useContext(AuthContext)
@@ -52,7 +53,8 @@ const AddNew = () => {
     //console.log(user.displayName)
 
     return (
-        <div className='mx-52 mt-20'>
+        <div className=''>
+            <div className='mx-52 mt-20 mb-20'>
             <form onSubmit={handleAddToys} className="flex flex-col gap-4">
                 <div>
                     <div className="mb-2 block">
@@ -239,9 +241,11 @@ const AddNew = () => {
                 </div> */}
 
                 <Button className='bg-[#75E6DA]' type="submit">
-                    Submit
+                    Add New
                 </Button>
             </form>
+            </div>
+            <Footer></Footer>
         </div>
     );
 };

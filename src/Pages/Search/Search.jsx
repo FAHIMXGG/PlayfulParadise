@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
 import { Link, Outlet } from 'react-router-dom';
 import NavBar from '../../Shared/NavBar';
+import Footer from '../../Shared/Footer/Footer';
 
 const Search = () => {
     const [message, setMessage] = useState('');
     return (
         <div>
             <NavBar></NavBar>
-            <div className='lg:mx-52 lg:px-52 px-4 mt-16'>
+            <div className='lg:mx-52 lg:px-52 px-4 mt-16 '>
                 <form>
                     <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
                     <div class="relative">
@@ -26,6 +27,7 @@ const Search = () => {
                 </form>
             </div>
             <Outlet></Outlet>
+            <Footer></Footer>
         </div>
     );
 };

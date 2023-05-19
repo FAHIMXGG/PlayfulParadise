@@ -4,6 +4,7 @@ import React, { useContext, useState } from 'react';
 
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../provider/AuthProvider';
+import Footer from '../../Shared/Footer/Footer';
 
 const Reg = () => {
     const { createUser, updateUserData } = useContext(AuthContext);
@@ -156,6 +157,7 @@ const Reg = () => {
                 </Button>
                 
             </form>
+            <Footer></Footer>
             
         </div>
     );
