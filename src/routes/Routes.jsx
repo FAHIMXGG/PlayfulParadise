@@ -1,5 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
-import HomeLayouts from "../Layouts/HomeLayouts";
+
 import Login from "../Pages/Login/Login";
 import Reg from "../Pages/Reg/Reg";
 import MyToys from "../Pages/MyToys/MyToys";
@@ -10,11 +10,13 @@ import ToysDetails from "../Pages/ToysDetails/ToysDetails";
 import ToysFullData from "../Pages/ToysDetails/Info/ToysFullData";
 import UpdateData from "../Pages/UpdateData/UpdateData";
 import UpdateToysDataPage from "../Pages/UpdateData/UpdateToysDataPage";
+import Layouts from "../Layouts/Layouts";
+import HomeLayouts from "../Layouts/HomeLayouts";
 
 const router = createBrowserRouter([
     {
         path: '/',
-        element: <HomeLayouts></HomeLayouts>,
+        element: <Layouts></Layouts>,
         children: [
             
 
@@ -37,6 +39,10 @@ const router = createBrowserRouter([
             
 
         ]
+    },
+    {
+        path: 'home',
+        element: <HomeLayouts></HomeLayouts>
     },
     {
         path: 'allToys',

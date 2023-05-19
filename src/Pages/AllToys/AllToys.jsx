@@ -15,13 +15,29 @@ const AllToys = () => {
     }, [])
 
 //console.log(toys)
+    const [search, setSearch] = useState('')
 
     return (
         <div>
             <NavBar></NavBar>
+
+            <div className='lg:px-16 '>
+                <div className='flex justify-end md:pr-12 border-[#7E90FE]'>
+                    <select className='rounded' onChange={(e) => setSearch(e.target.value)}>
+                        <option value="">All</option>
+                        <option value="SportsCar">Sports Car</option>
+                        <option value="RegularCar">Regular Car</option>
+                        <option value="Truck">Truck</option>
+
+                    </select>
+                </div>
+            </div>
+
             <div className='grid lg:grid-cols-4 gap-10 lg:px-28 mt-6 p-5'>
                 {
-                    toys.map(toy => <AllToysInfo
+                    toys.filter((item) => {
+                        return search === '' ? item : item.subCategory.includes(search)
+                    }).map(toy => <AllToysInfo
                     key={toy._id}
                     toy={toy}
                     

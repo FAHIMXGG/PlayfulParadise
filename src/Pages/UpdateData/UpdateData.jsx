@@ -148,10 +148,10 @@ const UpdateData = () => {
                         defaultValue={subCategory}
                     >
                         <option>
-                        Sports Car
+                        SportsCar
                         </option>
                         <option>
-                        Regular Car
+                        RegularCar
                         </option>
                         <option>
                         Truck
