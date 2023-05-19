@@ -4,10 +4,11 @@ import Swal from 'sweetalert2'
 import { AuthContext } from '../../provider/AuthProvider';
 import { useLoaderData } from 'react-router-dom';
 import Footer from '../../Shared/Footer/Footer';
+import useTitle from '../../Hook/UseTitle';
 
 
 const UpdateData = () => {
-    
+    useTitle('PlayfulParadise | Update Data')
     const update = useLoaderData()
 
     const { _id, photo, ProductName, sellerEmail, sellerName, subCategory, price, rating, quantity, description } = update
@@ -257,7 +258,7 @@ const UpdateData = () => {
                 </div> */}
 
                 <Button type="submit">
-                    Submit
+                    Update
                 </Button>
             </form>
             </div>

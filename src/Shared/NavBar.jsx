@@ -1,4 +1,4 @@
-import { Avatar, Dropdown, Navbar } from 'flowbite-react';
+import { Avatar, Dropdown, Navbar, Tooltip } from 'flowbite-react';
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import ActiveLink from './ActiveLink/ActiveLink';
@@ -20,10 +20,12 @@ const NavBar = () => {
                 rounded={true}
             >
                 <Navbar.Brand href="https://github.com/FAHIMXGG">
-
-                    <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white md:ml-16  font-mono text-[#05445E]">
-                        PlayfulParadise
-                    </span>
+                    <div className='flex gap-2 md:ml-16'>
+                        <img className='w-10' src="https://cdn.discordapp.com/attachments/1094651413235253289/1109142459331661865/blue-car-logo-png.webp" alt="" />
+                        <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white   font-mono text-[#05445E]">
+                            PlayfulParadise
+                        </span>
+                    </div>
                 </Navbar.Brand>
                 <div className="flex md:order-2 md:mr-16">
 
@@ -32,7 +34,7 @@ const NavBar = () => {
                         <Dropdown
                             arrowIcon={false}
                             inline={true}
-                            label={user.photoURL ? <Avatar alt="User settings" img={user.photoURL} rounded={true} /> : <Avatar alt="User settings" img="https://flowbite.com/docs/images/people/profile-picture-5.jpg" rounded={true} />}
+                            label={user.photoURL ? <Tooltip content={user.displayName}><Avatar alt="User settings" img={user.photoURL} rounded={true} /></Tooltip> : <Avatar alt="User settings" img="https://flowbite.com/docs/images/people/profile-picture-5.jpg" rounded={true} />}
                         >
                             <Dropdown.Header>
                                 <span className="block text-sm">
@@ -43,7 +45,7 @@ const NavBar = () => {
                                 </span>
                             </Dropdown.Header>
                             <Dropdown.Item>
-                                Dashboard
+                                <Link to={`/myToys`}>Dashboard</Link>
                             </Dropdown.Item>
                             <Dropdown.Item>
                                 Settings
@@ -74,15 +76,15 @@ const NavBar = () => {
                     <ActiveLink to="/allToys">All Toys</ActiveLink>
 
                     {
-                        user ? <ActiveLink to="/myToys">My Toys</ActiveLink>: ''        
+                        user ? <ActiveLink to="/myToys">My Toys</ActiveLink> : ''
                     }
                     {
                         user ? <ActiveLink to="/addNew">Add Toy</ActiveLink> : ''
                     }
-                    
+
 
                     <ActiveLink to="/blog">Blog</ActiveLink>
-                    
+
 
 
 

@@ -1,7 +1,9 @@
 import React from 'react';
 import { useNavigate, useRouteError } from "react-router-dom";
+import useTitle from '../../Hook/UseTitle';
 
 export default function ErrorPage() {
+    useTitle('PlayfulParadise | Error')
     const error = useRouteError();
     //console.error(error);
     const navigate = useNavigate()

@@ -3,9 +3,11 @@ import React, { useContext } from 'react';
 import Swal from 'sweetalert2'
 import { AuthContext } from '../../provider/AuthProvider';
 import Footer from '../../Shared/Footer/Footer';
+import useTitle from '../../Hook/UseTitle';
 
 const AddNew = () => {
     const { user } = useContext(AuthContext)
+    useTitle('PlayfulParadise | Add New')
 
     const handleAddToys = event => {
         event.preventDefault();

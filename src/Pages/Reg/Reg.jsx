@@ -5,6 +5,7 @@ import React, { useContext, useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../provider/AuthProvider';
 import Footer from '../../Shared/Footer/Footer';
+import useTitle from '../../Hook/UseTitle';
 
 const Reg = () => {
     const { createUser, updateUserData } = useContext(AuthContext);
@@ -13,6 +14,7 @@ const Reg = () => {
     const navigate = useNavigate();
     const location = useLocation()
     const from = location.state?.from?.pathname || '/'
+    useTitle('PlayfulParadise | Register')
 
     const handleRegister = event => {
         event.preventDefault();

@@ -4,10 +4,12 @@ import { AuthContext } from '../../provider/AuthProvider';
 import UserToys from './UserToys';
 import Swal from 'sweetalert2'
 import Footer from '../../Shared/Footer/Footer';
+import useTitle from '../../Hook/UseTitle';
 
 const MyToys = () => {
     const { user } = useContext(AuthContext);
     const [toys, setToys] = useState([]);
+    useTitle('PlayfulParadise | My Toys')
 
 
     const url = `https://ass-11-toys-server-mrincv6nn-fahimxgg.vercel.app/toys?email=${user?.email}`;

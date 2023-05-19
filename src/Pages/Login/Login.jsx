@@ -3,9 +3,10 @@ import React, { useContext, useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../provider/AuthProvider';
 import Footer from '../../Shared/Footer/Footer';
+import useTitle from '../../Hook/UseTitle';
 
 const Login = () => {
-
+    useTitle('PlayfulParadise | Login')
     const { signIn, googleSignIn, gitHubSignIn } = useContext(AuthContext);
     const navigate = useNavigate();
     const location = useLocation()

@@ -8,9 +8,12 @@ import Gallery from '../Shared/Gallery/Gallery';
 import Brands from '../Shared/Brands/Brands';
 import AskedQ from '../Shared/AskedQ/AskedQ';
 import Footer from '../Shared/Footer/Footer';
+import useTitle from '../Hook/UseTitle';
 
 
 const HomeLayouts = () => {
+
+    useTitle('PlayfulParadise | Home')
     return (
         <div>
             <NavBar></NavBar>

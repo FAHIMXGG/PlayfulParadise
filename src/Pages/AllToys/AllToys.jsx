@@ -3,9 +3,11 @@ import AllToysInfo from './AllToysInfo/AllToysInfo';
 import { Link, Outlet } from 'react-router-dom';
 import NavBar from '../../Shared/NavBar';
 import Footer from '../../Shared/Footer/Footer';
+import useTitle from '../../Hook/UseTitle';
 
 const AllToys = () => {
     const [toys, setToys] = useState([]);
+    useTitle('PlayfulParadise | All Toys')
 
 
     useEffect(() => {
@@ -15,9 +17,17 @@ const AllToys = () => {
             .catch(error => console.error(error))
     }, [])
 
-//console.log(toys)
+    //console.log(toys)
     const [search, setSearch] = useState('')
     const [message, setMessage] = useState('');
+
+    const sortByPrice = () => {
+        const sortedToys = [...toys].sort((a, b) => a.price - b.price);
+        setToys(sortedToys);
+    };
+
+
+    //console.log(short)
 
     return (
         <div>
@@ -42,7 +52,10 @@ const AllToys = () => {
                 </form>
             </div>
 
-            <div className='lg:px-16 '>
+            <div className='lg:px-16 flex justify-end gap-2'>
+                <div className='flex justify-end '>
+                    <button className='border px-5 border-black rounded-md' onClick={sortByPrice}>By Price</button>
+                </div>
                 <div className='flex justify-end md:pr-12 border-[#7E90FE]'>
                     <select className='rounded' onChange={(e) => setSearch(e.target.value)}>
                         <option value="">All</option>
@@ -52,16 +65,19 @@ const AllToys = () => {
 
                     </select>
                 </div>
+
             </div>
+
+
 
             <div className='grid lg:grid-cols-4 gap-10 lg:px-28 mt-6 p-5 mb-20'>
                 {
                     toys.filter((item) => {
                         return search === '' ? item : item.subCategory.includes(search)
                     }).map(toy => <AllToysInfo
-                    key={toy._id}
-                    toy={toy}
-                    
+                        key={toy._id}
+                        toy={toy}
+
                     ></AllToysInfo>)
                 }
             </div>

@@ -2,9 +2,11 @@ import React, { useState } from 'react';
 import { Link, Outlet } from 'react-router-dom';
 import NavBar from '../../Shared/NavBar';
 import Footer from '../../Shared/Footer/Footer';
+import useTitle from '../../Hook/UseTitle';
 
 const Search = () => {
     const [message, setMessage] = useState('');
+    useTitle('PlayfulParadise | Search')
     return (
         <div>
             <NavBar></NavBar>
