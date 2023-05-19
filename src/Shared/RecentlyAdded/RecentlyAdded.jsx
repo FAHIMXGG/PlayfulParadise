@@ -21,7 +21,10 @@ const RecentlyAdded = () => {
     return (
         <div>
             <div className='text-center font-semibold text-2xl'>
-                <h1>Recently Added Products</h1>
+                <h1 className='mb-3 font-mono'>Recently Added Products</h1>
+                <div className='flex justify-center'>
+                <hr className='border-1 w-3/12 border-cyan-400' />
+                </div>
             </div>
             <div className='grid lg:grid-cols-4 gap-10 lg:px-28 mt-6 p-5'>
                 {

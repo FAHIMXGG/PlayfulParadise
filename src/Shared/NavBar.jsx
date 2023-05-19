@@ -82,7 +82,7 @@ const NavBar = () => {
                     
 
                     <ActiveLink to="/blog">Blog</ActiveLink>
-                    <ActiveLink to="/about">About</ActiveLink>
+                    
 
 
 

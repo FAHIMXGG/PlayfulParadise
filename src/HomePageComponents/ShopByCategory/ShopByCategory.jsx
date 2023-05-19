@@ -33,6 +33,10 @@ const ShopByCategory = memo(() => {
                     <Tab className={"bg-[#75E6DA] text-[#0C2D48] px-2 py-1 rounded font-semibold "}><button>Truck</button></Tab>
                 </TabList>
 
+                <div className='flex justify-center mt-5'>
+                <hr className='border-1 w-10/12 border-cyan-400' />
+                </div>
+
                 <TabPanel className={"grid lg:grid-cols-4 gap-10 lg:px-28 mt-6 "}>
                     {
                         toys.filter((item) => {

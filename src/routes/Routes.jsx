@@ -14,11 +14,13 @@ import Layouts from "../Layouts/Layouts";
 import HomeLayouts from "../Layouts/HomeLayouts";
 import Search from "../Pages/Search/Search";
 import SearchQ from "../Pages/Search/SearchQ/SearchQ";
+import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 
 const router = createBrowserRouter([
     {
         path: '/',
         element: <Layouts></Layouts>,
+        errorElement: <ErrorPage></ErrorPage>,
         children: [
             {
                 path: '/',
@@ -39,7 +41,7 @@ const router = createBrowserRouter([
             },
             {
                 path: '/addNew',
-                element: <AddNew></AddNew>
+                element: <PrivateRoute><AddNew></AddNew></PrivateRoute>
             },
             
 
@@ -75,7 +77,7 @@ const router = createBrowserRouter([
     },
     {
         path: 'updateToys',
-       element: <UpdateToysDataPage></UpdateToysDataPage>,
+       element: <PrivateRoute><UpdateToysDataPage></UpdateToysDataPage></PrivateRoute>,
        children:[
         {
             path: ':id',

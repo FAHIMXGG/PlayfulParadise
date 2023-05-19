@@ -52,7 +52,7 @@ const AddNew = () => {
     //console.log(user.displayName)
 
     return (
-        <div>
+        <div className='mx-52 mt-20'>
             <form onSubmit={handleAddToys} className="flex flex-col gap-4">
                 <div>
                     <div className="mb-2 block">
@@ -238,7 +238,7 @@ const AddNew = () => {
                     />
                 </div> */}
 
-                <Button type="submit">
+                <Button className='bg-[#75E6DA]' type="submit">
                     Submit
                 </Button>
             </form>
