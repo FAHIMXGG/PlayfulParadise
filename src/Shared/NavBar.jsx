@@ -72,7 +72,14 @@ const NavBar = () => {
                 <Navbar.Collapse className=' text-[#05445E]'>
                     <ActiveLink to="/home">Home</ActiveLink>
                     <ActiveLink to="/allToys">All Toys</ActiveLink>
-                    <ActiveLink to="/myToys">My Toys</ActiveLink>
+
+                    {
+                        user ? <ActiveLink to="/myToys">My Toys</ActiveLink>: ''        
+                    }
+                    {
+                        user ? <ActiveLink to="/addNew">Add Toy</ActiveLink> : ''
+                    }
+                    
 
                     <ActiveLink to="/blog">Blog</ActiveLink>
                     <ActiveLink to="/about">About</ActiveLink>

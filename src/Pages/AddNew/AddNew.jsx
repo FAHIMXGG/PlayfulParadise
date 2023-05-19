@@ -27,7 +27,7 @@ const AddNew = () => {
 
 
 
-        fetch('http://localhost:5000/toys', {
+        fetch('https://ass-11-toys-server-mrincv6nn-fahimxgg.vercel.app/toys', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

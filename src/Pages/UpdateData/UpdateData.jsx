@@ -35,7 +35,7 @@ const UpdateData = () => {
 
 
 
-        fetch(`http://localhost:5000/allToys/${_id}`, {
+        fetch(`https://ass-11-toys-server-mrincv6nn-fahimxgg.vercel.app/allToys/${_id}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'

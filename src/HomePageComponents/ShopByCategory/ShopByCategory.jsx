@@ -10,7 +10,7 @@ const ShopByCategory = memo(() => {
 
 
     useEffect(() => {
-        fetch('http://localhost:5000/allToys')
+        fetch('https://ass-11-toys-server-mrincv6nn-fahimxgg.vercel.app/allToys')
             .then(res => res.json())
             .then(data => setToys(data))
             .catch(error => console.error(error))
@@ -33,7 +33,7 @@ const ShopByCategory = memo(() => {
                     <Tab className={"bg-[#75E6DA] text-[#0C2D48] px-2 py-1 rounded font-semibold "}><button>Truck</button></Tab>
                 </TabList>
 
-                <TabPanel className={"grid lg:grid-cols-4 gap-10 lg:px-28 mt-6 p-5"}>
+                <TabPanel className={"grid lg:grid-cols-4 gap-10 lg:px-28 mt-6 "}>
                     {
                         toys.filter((item) => {
                             return search === '' ? item : item.subCategory.includes(search)
@@ -46,7 +46,7 @@ const ShopByCategory = memo(() => {
 
                     }
                 </TabPanel>
-                <TabPanel className={"grid lg:grid-cols-4 gap-10 lg:px-28 mt-6 p-5"}>
+                <TabPanel className={"grid lg:grid-cols-4 gap-10 lg:px-28 "}>
                     {
                         toys.filter((item) => {
                             return search2 === '' ? item : item.subCategory.includes(search2)
@@ -59,7 +59,7 @@ const ShopByCategory = memo(() => {
 
                     }
                 </TabPanel>
-                <TabPanel className={"grid lg:grid-cols-4 gap-10 lg:px-28 mt-6 p-5"}>
+                <TabPanel className={"grid lg:grid-cols-4 gap-10 lg:px-28 "}>
                     {
                         toys.filter((item) => {
                             return search3 === '' ? item : item.subCategory.includes(search3)

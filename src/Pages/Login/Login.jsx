@@ -10,16 +10,8 @@ const Login = () => {
     const location = useLocation()
     
     const [error, setError] = useState('');
-    const from = location.state?.from?.pathname || '/'
+    const from = location.state?.from?.pathname || '/home'
 
-    // if (loading) {
-    //     return (<div className="text-center mt-24">
-    //         <Spinner
-    //             color="failure"
-    //             aria-label="Failure spinner example"
-    //         />
-    //     </div>)
-    // }
 
     const handleLogin = event => {
         event.preventDefault();
@@ -67,7 +59,7 @@ const Login = () => {
 
     return (
         <div className=''>
-            <form onSubmit={handleLogin} className="flex flex-col gap-4 mx-8 md:mx-52 md:px-80 mt-10 md:mb-64">
+            <form onSubmit={handleLogin} className="flex flex-col gap-4 mx-8 md:mx-52 md:px-80 mt-10 md:mb-4">
                 <div>
                     <div className="mb-2 block">
                         <Label
@@ -115,11 +107,12 @@ const Login = () => {
                 <button className='py-2 rounded font-bold bg-[#75E6DA] text-[#05445E] hover:bg-[#B1D4E0]' type="submit">
                     Submit
                 </button>
-                <div className='flex gap-3 justify-center text-[#05445E]'>
+                
+            </form>
+            <div className='flex gap-3 justify-center text-[#05445E]'>
                     <button className='py-2 rounded font-bold px-3 bg-[#75E6DA]  hover:bg-[#B1D4E0]' onClick={handleGoogleSignIn}>Google</button>
                     <button className='py-2 rounded font-bold px-3 bg-[#75E6DA]  hover:bg-[#B1D4E0]' onClick={handleGitHubSignIn}>GitHub</button>
                 </div>
-            </form>
             
         </div>
     );
