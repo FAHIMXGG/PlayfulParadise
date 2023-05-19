@@ -12,6 +12,8 @@ import UpdateData from "../Pages/UpdateData/UpdateData";
 import UpdateToysDataPage from "../Pages/UpdateData/UpdateToysDataPage";
 import Layouts from "../Layouts/Layouts";
 import HomeLayouts from "../Layouts/HomeLayouts";
+import Search from "../Pages/Search/Search";
+import SearchQ from "../Pages/Search/SearchQ/SearchQ";
 
 const router = createBrowserRouter([
     {
@@ -79,6 +81,17 @@ const router = createBrowserRouter([
         }
        ]
 
+    },
+    {
+        path: 'search',
+        element: <Search></Search>,
+        children:[
+            {
+                path:':data',
+                element: <SearchQ></SearchQ>,
+                loader: ({params}) => fetch(`http://localhost:5000/search?query=${params.data}`)
+            }
+        ]
     }
 ])
 

@@ -46,7 +46,7 @@ const ShopByCategory = memo(() => {
 
                     }
                 </TabPanel>
-                <TabPanel className={"flex justify-center"}>
+                <TabPanel className={"grid lg:grid-cols-4 gap-10 lg:px-28 mt-6 p-5"}>
                     {
                         toys.filter((item) => {
                             return search2 === '' ? item : item.subCategory.includes(search2)
@@ -59,7 +59,7 @@ const ShopByCategory = memo(() => {
 
                     }
                 </TabPanel>
-                <TabPanel className={"flex justify-center"}>
+                <TabPanel className={"grid lg:grid-cols-4 gap-10 lg:px-28 mt-6 p-5"}>
                     {
                         toys.filter((item) => {
                             return search3 === '' ? item : item.subCategory.includes(search3)
