@@ -52,7 +52,7 @@ const UpdateData = () => {
                         title: 'Success!',
                         text: 'Coffee Updated Successfully',
                         icon: 'success',
-                        confirmButtonText: 'Cool'
+                        confirmButtonText: 'OK!'
                     })
                 }
             })
