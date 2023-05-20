@@ -5,6 +5,7 @@ import UserToys from './UserToys';
 import Swal from 'sweetalert2'
 import Footer from '../../Shared/Footer/Footer';
 import useTitle from '../../Hook/UseTitle';
+import { Avatar, Tooltip } from 'flowbite-react';
 
 const MyToys = () => {
     const { user } = useContext(AuthContext);
@@ -46,11 +47,19 @@ const MyToys = () => {
     console.log(toys)
     return (
         <div>
+            <div className='flex items-center flex-col mt-20 '>
+                <div>
+                    <Tooltip content={user?.displayName}>
+                        <img className='rounded-full'  src={user?.photoURL}  alt="" />
+                        </Tooltip>
+                </div>
+                <h1 className='font-semibold'>Hello, {user?.displayName}</h1>
+            </div>
 
             <div className='mx-32 mb-5 mt-10 flex justify-end'>
                 <Link to="/addNew"><button className='bg-[#75E6DA] font-semibold px-3 py-2 rounded-lg'>Add New</button></Link>
             </div>
-            <div className='mb-20'>
+            <div className='mb-96'>
                 {
                     toys.map(toy => <UserToys
                         key={toy._id}

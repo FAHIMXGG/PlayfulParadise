@@ -3,10 +3,19 @@ import React from 'react';
 const Footer = () => {
     return (
         <div className=''>
-            
-            <footer className="bg-[#05445E] text-center text-white">
+            <div>
+
+            </div>
+
+            <footer className="bg-[#1a6384] text-center text-white">
+                <div className='flex gap-2  pt-5 justify-center'>
+                    <img  className='w-10' src="https://cdn.discordapp.com/attachments/1094651413235253289/1109142459331661865/blue-car-logo-png.webp" alt="" />
+                    <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white   font-mono text-[#75E6DA]">
+                        PlayfulParadise
+                    </span>
+                </div>
                 <div className=" px-6 pt-6">
-                    
+
                     <div className="mb-6 flex justify-center">
                         <a
                             href="#!"
@@ -107,7 +116,7 @@ const Footer = () => {
                         </a>
                     </div>
 
-                    
+
                     <div>
                         <form action="">
                             <div
@@ -118,7 +127,7 @@ const Footer = () => {
                                     </p>
                                 </div>
 
-                                
+
                                 <div className="relative md:mb-6" data-te-input-wrapper-init>
                                     <input
                                         type="text"
@@ -132,7 +141,7 @@ const Footer = () => {
                                     </label>
                                 </div>
 
-                                
+
                                 <div className="mb-6 md:mr-auto">
                                     <button
                                         type="submit"
@@ -146,14 +155,25 @@ const Footer = () => {
                         </form>
                     </div>
 
-                    
-                    <div className="mb-6 md:px-40">
-                        <p>
-                        Get ready to rev your engines and embark on a thrilling adventure with our incredible selection of toy cars. Whether you're a collector, an aspiring racer, or a young enthusiast, our website is the ultimate destination for all things toy cars. Discover a world of speed, excitement, and endless possibilities!
-                        </p>
+
+                    <div className="mb-6 md:mx-32 flex justify-between items-">
+                        <div className='w-2/4 text-left'>
+                            <p>About Us</p>
+                            <p>
+                                Get ready to rev your engines and embark on a thrilling adventure with our incredible selection of toy cars. Whether you're a collector, an aspiring racer, or a young enthusiast, our website is the ultimate destination for all things toy cars. Discover a world of speed, excitement, and endless possibilities!
+                            </p>
+                        </div>
+                        <div className='w-1/4 text-right'>
+                            <p>Contact Us</p>
+                            <p>Company Name: ABC Corporation</p>
+                            <p>Address: 123 Main Street, City, State, ZIP</p>
+                            <p>Phone: (123) 456-7890</p>
+                            <p>Email: info@abccorporation.com</p>
+                        </div>
+
                     </div>
 
-                    
+
                     <div className="grid md:grid-cols-2 lg:grid-cols-4">
                         <div className="mb-6">
                             <h5 className="mb-2.5 font-bold uppercase">Quick Links</h5>
@@ -165,7 +185,7 @@ const Footer = () => {
                                 <li>
                                     <a href="#!" className="text-white">All Toys</a>
                                 </li>
-                                
+
                             </ul>
                         </div>
 
@@ -179,7 +199,7 @@ const Footer = () => {
                                 <li>
                                     <a href="#!" className="text-white">Add Toys</a>
                                 </li>
-                                
+
                             </ul>
                         </div>
 
@@ -193,7 +213,7 @@ const Footer = () => {
                                 <li>
                                     <a href="#!" className="text-white">Picture</a>
                                 </li>
-                                
+
                             </ul>
                         </div>
 
@@ -207,14 +227,16 @@ const Footer = () => {
                                 <li>
                                     <a href="#!" className="text-white">Call</a>
                                 </li>
-                                
+
                             </ul>
                         </div>
                     </div>
                 </div>
 
-               
-                
+                <div>
+                    <p>© PlayfulParadise 2023</p>
+                </div>
+
             </footer>
         </div>
     );

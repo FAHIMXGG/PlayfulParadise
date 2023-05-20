@@ -19,7 +19,8 @@ const RecentlyAdded = () => {
     console.log(toys)
 
     return (
-        <div className='mb-20'>
+        <div data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom" className='mb-20'>
             <div className='text-center font-semibold text-2xl'>
                 <h1 className='mb-3 font-mono'>Recently Added Products</h1>
                 <div className='flex justify-center'>

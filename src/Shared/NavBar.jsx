@@ -79,7 +79,7 @@ const NavBar = () => {
                         user ? <ActiveLink to="/myToys">My Toys</ActiveLink> : ''
                     }
                     {
-                        user ? <ActiveLink to="/addNew">Add Toy</ActiveLink> : ''
+                        user ? <ActiveLink to="/addNew">Add A Toy</ActiveLink> : ''
                     }
 
 

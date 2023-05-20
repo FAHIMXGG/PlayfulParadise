@@ -15,6 +15,7 @@ import HomeLayouts from "../Layouts/HomeLayouts";
 import Search from "../Pages/Search/Search";
 import SearchQ from "../Pages/Search/SearchQ/SearchQ";
 import ErrorPage from "../Pages/ErrorPage/ErrorPage";
+import Blog from "../Pages/Blog/Blog";
 
 const router = createBrowserRouter([
     {
@@ -43,6 +44,10 @@ const router = createBrowserRouter([
                 path: '/addNew',
                 element: <PrivateRoute><AddNew></AddNew></PrivateRoute>
             },
+            {
+                path: '/blog',
+                element: <Blog></Blog>
+            }
             
 
         ]

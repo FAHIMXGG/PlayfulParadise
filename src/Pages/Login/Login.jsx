@@ -4,15 +4,19 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../provider/AuthProvider';
 import Footer from '../../Shared/Footer/Footer';
 import useTitle from '../../Hook/UseTitle';
+import { FaGoogle, FaGithub, FaUnlock } from 'react-icons/fa';
 
 const Login = () => {
     useTitle('PlayfulParadise | Login')
     const { signIn, googleSignIn, gitHubSignIn } = useContext(AuthContext);
     const navigate = useNavigate();
     const location = useLocation()
+    //console.log(navigate);
     
     const [error, setError] = useState('');
     const from = location.state?.from?.pathname || '/home'
+    // const ff = location.state
+    // console.log(ff)
 
 
     const handleLogin = event => {
@@ -103,17 +107,17 @@ const Login = () => {
                     </Label>
                 </div>
                 <div><p className='text-xs font-medium'>
-                    No Account? <Link className='text-orange-400 font-bold' to="/reg">Register</Link> <br />
+                    No Account? <Link className='text-[#189AB4] font-bold' to="/reg">Register</Link> <br />
                     <p>Or Login with Google or GitHub</p>
                 </p></div>
-                <button className='py-2 rounded font-bold bg-[#75E6DA] text-[#05445E] hover:bg-[#B1D4E0]' type="submit">
-                    Submit
+                <button className='flex items-center justify-center py-2 rounded font-bold bg-[#75E6DA] text-[#05445E] hover:bg-[#B1D4E0]' type="submit">
+                Log in<FaUnlock />
                 </button>
                 
             </form>
             <div className='flex gap-3 justify-center text-[#05445E] mb-44'>
-                    <button className='py-2 rounded font-bold px-3 bg-[#75E6DA]  hover:bg-[#B1D4E0]' onClick={handleGoogleSignIn}>Google</button>
-                    <button className='py-2 rounded font-bold px-3 bg-[#75E6DA]  hover:bg-[#B1D4E0]' onClick={handleGitHubSignIn}>GitHub</button>
+                    <button className='flex items-center py-2 rounded font-bold px-3 bg-[#75E6DA]  hover:bg-[#B1D4E0]' onClick={handleGoogleSignIn}><FaGoogle />oogle</button>
+                    <button className='flex items-center py-2 rounded font-bold px-3 bg-[#75E6DA]  hover:bg-[#B1D4E0]' onClick={handleGitHubSignIn}><FaGithub />GitHub</button>
             </div>
             <Footer></Footer>
             

@@ -5,7 +5,7 @@ const GalleryPicture = ({ toy }) => {
     //console.log(toy)
     const { _id, photo } = toy
     return (
-        <div>
+        <div >
             <Link to={`/toys/${_id}`}>
                 {/* <div className=' border-[#75E6DA] border-4 hover:bg-gray-200'>
                     <div className='flex justify-center  '>
@@ -13,7 +13,7 @@ const GalleryPicture = ({ toy }) => {
                     </div>
                 </div> */}
 
-                <div className="relative bg-white border border-[#75E6DA] rounded-lg shadow-lg dark:bg-[#75E6DA] dark:border-[#75E6DA]">
+                <div  className="relative bg-white border border-[#75E6DA] rounded-lg shadow-lg dark:bg-[#75E6DA] dark:border-[#75E6DA]">
                     <div className='flex justify-center' >
                         <img className="p-8 h-72 rounded-t-lg " src={photo} alt="Image" />
                     </div>

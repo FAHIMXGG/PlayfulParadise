@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const DataLoad = ({ toy }) => {
     const { _id, photo, ProductName, sellerEmail, sellerName, subCategory, price, rating, quantity, description } = toy
     return (
-        <div>
+        <div >
             <div>
 
                 <div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">

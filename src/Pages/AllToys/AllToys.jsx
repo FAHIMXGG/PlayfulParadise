@@ -4,9 +4,11 @@ import { Link, Outlet } from 'react-router-dom';
 import NavBar from '../../Shared/NavBar';
 import Footer from '../../Shared/Footer/Footer';
 import useTitle from '../../Hook/UseTitle';
+import { Dropdown } from 'flowbite-react';
 
 const AllToys = () => {
     const [toys, setToys] = useState([]);
+    const [visible, setVisible] = useState(20);
     useTitle('PlayfulParadise | All Toys')
 
 
@@ -25,15 +27,26 @@ const AllToys = () => {
         const sortedToys = [...toys].sort((a, b) => a.price - b.price);
         setToys(sortedToys);
     };
+    const sortByPriceH = () => {
+        const sortedToys = [...toys].sort((a, b) => b.price - a.price);
+        setToys(sortedToys);
+    };
 
 
     //console.log(short)
+    const showMoreItems = () => {
+        setVisible((prevValue) => prevValue + 100);
+    };
+    let button;
+    if (visible === 20) {
+        button = <button style={{ background: ' linear-gradient(90deg, #7E90FE 0%, #9873FF 100%)' }} className='mt-5 mb-16 text-center mx-auto flex justify-center px-5 py-2 rounded text-white' onClick={showMoreItems}>Show More</button>
+    }
 
     return (
         <div>
             <NavBar></NavBar>
 
-            <div className='lg:mx-52 lg:px-52 px-4 mt-16'>
+            <div className='lg:mx-52 lg:px-52 px-4 mt-16 mb-10'>
                 <form>
                     <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
                     <div class="relative">
@@ -54,7 +67,23 @@ const AllToys = () => {
 
             <div className='lg:px-16 flex justify-end gap-2'>
                 <div className='flex justify-end '>
-                    <button className='border px-5 border-black rounded-md' onClick={sortByPrice}>By Price</button>
+
+                    
+
+                    <Dropdown 
+                        label="By Price"
+                        dismissOnClick={false}
+                    >
+                        <Dropdown.Item>
+                        <button className=' ' onClick={sortByPrice}>Low To High</button>
+                        </Dropdown.Item>
+                        <Dropdown.Item>
+                        <button className='' onClick={sortByPriceH}>High To Low</button>
+                        </Dropdown.Item>
+                        
+                    </Dropdown>
+                    
+                    
                 </div>
                 <div className='flex justify-end md:pr-12 border-[#7E90FE]'>
                     <select className='rounded' onChange={(e) => setSearch(e.target.value)}>
@@ -62,6 +91,7 @@ const AllToys = () => {
                         <option value="SportsCar">Sports Car</option>
                         <option value="RegularCar">Regular Car</option>
                         <option value="Truck">Truck</option>
+
 
                     </select>
                 </div>
@@ -72,7 +102,7 @@ const AllToys = () => {
 
             <div className='grid lg:grid-cols-4 gap-10 lg:px-28 mt-6 p-5 mb-20'>
                 {
-                    toys.filter((item) => {
+                    toys.slice(0, visible).filter((item) => {
                         return search === '' ? item : item.subCategory.includes(search)
                     }).map(toy => <AllToysInfo
                         key={toy._id}
@@ -81,6 +111,7 @@ const AllToys = () => {
                     ></AllToysInfo>)
                 }
             </div>
+            {button}
             <Outlet></Outlet>
             <Footer></Footer>
         </div>

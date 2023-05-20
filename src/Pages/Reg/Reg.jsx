@@ -132,8 +132,8 @@ const Reg = () => {
                 </div>
                 <p className='text-orange-700'>{error}</p>
                 <div><p className='text-xs font-medium'>
-                    Already Have An Account? <Link className='text-orange-400 font-bold' to="/Login">Login</Link> <br />
-                    <p>Or Login with <Link className='text-orange-400 font-bold' to="/Login">Google or GitHub</Link></p>
+                    Already Have An Account? <Link className='text-[#189AB4] font-bold' to="/Login">Login</Link> <br />
+                    <p>Or Login with <Link className='text-[#189AB4] font-bold' to="/Login">Google or GitHub</Link></p>
                     </p></div>
                 <div className="flex items-center gap-2">
                     <Checkbox id="agree" 
@@ -148,13 +148,13 @@ const Reg = () => {
                         I agree with the  {' '}
                         <Link
                             href="/forms"
-                            className="text-orange-400 hover:underline dark:text-blue-500"
+                            className="text-[#189AB4] hover:underline dark:text-blue-500"
                         >
                              terms and conditions 
                         </Link>
                     </Label>
                 </div>
-                <Button disabled={!accepted} className='bg-[#75E6DA] text-[#05445E] hover:bg-[#B1D4E0]' type="submit" to="/home">
+                <Button disabled={!accepted} className='bg-[#76e1d6] text-[#05445E] hover:bg-[#add5e2]' type="submit" to="/home">
                     Register new account
                 </Button>
                 
