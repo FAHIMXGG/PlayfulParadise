@@ -115,7 +115,7 @@ const Login = () => {
                 </button>
                 
             </form>
-            <div className='flex gap-3 justify-center text-[#05445E] mb-44'>
+            <div className='mt-3  flex gap-3 justify-center text-[#05445E] mb-44'>
                     <button className='flex items-center py-2 rounded font-bold px-3 bg-[#75E6DA]  hover:bg-[#B1D4E0]' onClick={handleGoogleSignIn}><FaGoogle />oogle</button>
                     <button className='flex items-center py-2 rounded font-bold px-3 bg-[#75E6DA]  hover:bg-[#B1D4E0]' onClick={handleGitHubSignIn}><FaGithub />GitHub</button>
             </div>

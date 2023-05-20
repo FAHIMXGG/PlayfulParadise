@@ -56,7 +56,7 @@ const AddNew = () => {
 
     return (
         <div className=''>
-            <div className='mx-52 mt-20 mb-20'>
+            <div className='px-5 md:mx-52 mt-20 mb-20'>
             <form onSubmit={handleAddToys} className="flex flex-col gap-4">
                 <div>
                     <div className="mb-2 block">

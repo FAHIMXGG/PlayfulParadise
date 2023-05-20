@@ -63,7 +63,7 @@ const UpdateData = () => {
 
     return (
         <div>
-            <div className='mb-20 mx-52'>
+            <div className='px-5 md:mx-52 mt-20 mb-20'>
             <form onSubmit={handleUpdateToys} className="flex flex-col gap-4">
                 <div>
                     <div className="mb-2 block">

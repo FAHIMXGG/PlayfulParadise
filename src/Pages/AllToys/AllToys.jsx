@@ -39,7 +39,7 @@ const AllToys = () => {
     };
     let button;
     if (visible === 20) {
-        button = <button style={{ background: ' linear-gradient(90deg, #7E90FE 0%, #9873FF 100%)' }} className='mt-5 mb-16 text-center mx-auto flex justify-center px-5 py-2 rounded text-white' onClick={showMoreItems}>Show More</button>
+        button = <button style={{ background: ' linear-gradient(90deg, #75E6DA 0%, #1a6384 100%)' }} className='font-semibold mt-5 mb-16 text-center mx-auto flex justify-center px-5 py-2 rounded text-white' onClick={showMoreItems}>Show More</button>
     }
 
     return (
@@ -65,7 +65,7 @@ const AllToys = () => {
                 </form>
             </div>
 
-            <div className='lg:px-16 flex justify-end gap-2'>
+            <div className='px-5 lg:px-16 flex justify-end gap-2'>
                 <div className='flex justify-end '>
 
                     

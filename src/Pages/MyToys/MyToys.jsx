@@ -56,7 +56,7 @@ const MyToys = () => {
                 <h1 className='font-semibold'>Hello, {user?.displayName}</h1>
             </div>
 
-            <div className='mx-32 mb-5 mt-10 flex justify-end'>
+            <div className='px-5 md:mx-32 mb-5 mt-10 flex justify-center md:justify-end'>
                 <Link to="/addNew"><button className='bg-[#75E6DA] font-semibold px-3 py-2 rounded-lg'>Add New</button></Link>
             </div>
             <div className='mb-96'>

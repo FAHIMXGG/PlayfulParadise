@@ -156,14 +156,14 @@ const Footer = () => {
                     </div>
 
 
-                    <div className="mb-6 md:mx-32 flex justify-between items-">
-                        <div className='w-2/4 text-left'>
+                    <div className="mb-6 md:mx-32 md:flex justify-between ">
+                        <div className='md:w-2/4 md:text-left '>
                             <p>About Us</p>
                             <p>
                                 Get ready to rev your engines and embark on a thrilling adventure with our incredible selection of toy cars. Whether you're a collector, an aspiring racer, or a young enthusiast, our website is the ultimate destination for all things toy cars. Discover a world of speed, excitement, and endless possibilities!
                             </p>
                         </div>
-                        <div className='w-1/4 text-right'>
+                        <div className='md:w-1/4 md:text-right'>
                             <p>Contact Us</p>
                             <p>Company Name: ABC Corporation</p>
                             <p>Address: 123 Main Street, City, State, ZIP</p>

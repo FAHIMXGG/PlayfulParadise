@@ -37,7 +37,7 @@ const ShopByCategory = memo(() => {
                 <hr className='border-1 w-10/12 border-cyan-400' />
                 </div>
 
-                <TabPanel className={"grid lg:grid-cols-4 gap-10 lg:px-28 mt-6 "}>
+                <TabPanel className={"grid lg:grid-cols-4 gap-10 lg:px-28 mt-6 px-5"}>
                     {
                         toys.filter((item) => {
                             return search === '' ? item : item.subCategory.includes(search)
@@ -50,7 +50,7 @@ const ShopByCategory = memo(() => {
 
                     }
                 </TabPanel>
-                <TabPanel className={"grid lg:grid-cols-4 gap-10 lg:px-28 "}>
+                <TabPanel className={"grid lg:grid-cols-4 gap-10 lg:px-28 px-5"}>
                     {
                         toys.filter((item) => {
                             return search2 === '' ? item : item.subCategory.includes(search2)
@@ -63,7 +63,7 @@ const ShopByCategory = memo(() => {
 
                     }
                 </TabPanel>
-                <TabPanel className={"grid lg:grid-cols-4 gap-10 lg:px-28 "}>
+                <TabPanel className={"grid lg:grid-cols-4 gap-10 lg:px-28 px-5 "}>
                     {
                         toys.filter((item) => {
                             return search3 === '' ? item : item.subCategory.includes(search3)

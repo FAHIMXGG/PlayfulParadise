@@ -22,7 +22,7 @@ const NavBar = () => {
                 <Navbar.Brand href="https://github.com/FAHIMXGG">
                     <div className='flex gap-2 md:ml-16'>
                         <img className='w-10' src="https://cdn.discordapp.com/attachments/1094651413235253289/1109142459331661865/blue-car-logo-png.webp" alt="" />
-                        <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white   font-mono text-[#05445E]">
+                        <span className="self-center whitespace-nowrap md:text-xl font-semibold dark:text-white   font-mono text-[#05445E]">
                             PlayfulParadise
                         </span>
                     </div>

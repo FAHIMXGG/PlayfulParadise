@@ -12,8 +12,8 @@ const ToysFullData = () => {
             <div className='flex justify-center'>
                 <img className='md:w-3/12' src={photo} alt="" />
             </div>
-            <div className='mx-48'>
-                <div className='bg-[#D4F1F4] px-72 rounded-lg'>
+            <div className='md:mx-48'>
+                <div className='bg-[#D4F1F4] px-5 md:px-72 rounded-lg'>
                     <div className='flex justify-center text-[#05445E] font-bold text-2xl mb-10 '>
                         <h1 className='mt-10'>
                             {ProductName}
