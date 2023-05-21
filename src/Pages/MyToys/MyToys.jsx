@@ -60,7 +60,7 @@ const MyToys = () => {
                 <Link to="/addNew"><button className='bg-[#75E6DA] font-semibold px-3 py-2 rounded-lg'>Add New</button></Link>
             </div>
             <div className='px-5 md:mx-32 flex justify-between bg-[#D4F1F4] mb-2 rounded-lg py-5 '>
-                <div className='flex justify-between w-2/12 font-bold'>
+                <div className='flex justify-between w-4/6 md:w-2/12 font-bold'>
                     <div>
                         <h1>Picture</h1>
                     </div>
