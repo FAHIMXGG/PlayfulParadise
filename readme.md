@@ -1,3 +1,4 @@
+-----Note Vercel get API Issue sometimes reload for issue----
 * Firebase live: https://ass-11-toys.web.app
 * Clint Github: https://github.com/programming-hero-web-course-4/b7a11-toy-marketplace-client-side-FAHIMXGG
 * API: https://ass-11-toys-server.vercel.app/
@@ -26,4 +27,3 @@
 12. React tabs: https://www.npmjs.com/package/react-tabs
 13. AOS: https://www.npmjs.com/package/aos
 14. Environment variable
------Note Vercel get API Issue----

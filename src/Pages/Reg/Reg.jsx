@@ -6,6 +6,7 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../provider/AuthProvider';
 import Footer from '../../Shared/Footer/Footer';
 import useTitle from '../../Hook/UseTitle';
+import { FaUnlock } from 'react-icons/fa';
 
 const Reg = () => {
     const { createUser, updateUserData } = useContext(AuthContext);
@@ -154,9 +155,9 @@ const Reg = () => {
                         </Link>
                     </Label>
                 </div>
-                <Button disabled={!accepted} className='bg-[#76e1d6] text-[#05445E] hover:bg-[#add5e2]' type="submit" to="/home">
-                    Register new account
-                </Button>
+                <button disabled={!accepted} className='flex items-center justify-center py-2 rounded font-bold bg-[#75E6DA] text-[#05445E] hover:bg-[#B1D4E0]' type="submit" to="/home">
+                    Register new account <FaUnlock />
+                </button>
                 
             </form>
             <Footer></Footer>
