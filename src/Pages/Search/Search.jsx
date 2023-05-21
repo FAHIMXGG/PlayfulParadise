@@ -21,7 +21,7 @@ const Search = () => {
                         <input onChange={e => setMessage(e.target.value)}
                             type="text"
                             id="message"
-                            name="message" class="block w-full p-4 pl-10 text-sm text-[#9D1512] border border-[#EC903E] rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-[#EC903E] dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search Food" required />
+                            name="message" class="block w-full p-4 pl-10 text-sm text-[#9D1512] border border-[#EC903E] rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-[#EC903E] dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search Car" required />
 
 
                         <Link to={`${message}`} className=' text-black hover:text-white absolute right-2.5 bottom-2.5 bg-[#75E6DA] hover:bg-[#9D1512] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800'>Search</Link>
