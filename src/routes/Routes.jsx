@@ -63,7 +63,7 @@ const router = createBrowserRouter([
             // {
             //     path: ':id',
             //     element: <ToysFullInfo></ToysFullInfo>,
-            //     loader: ({params}) => fetch(`https://ass-11-toys-server-mrincv6nn-fahimxgg.vercel.app/allToys/${params.id}`)
+            //     loader: ({params}) => fetch(`https://ass-11-toys-server.vercel.app/allToys/${params.id}`)
                 
             // }
         ]
@@ -75,7 +75,7 @@ const router = createBrowserRouter([
             {
                 path: ':id',
                 element: <PrivateRoute><ToysFullData></ToysFullData></PrivateRoute>,
-                loader: ({params}) => fetch(`https://ass-11-toys-server-mrincv6nn-fahimxgg.vercel.app/allToys/${params.id}`)
+                loader: ({params}) => fetch(`https://ass-11-toys-server.vercel.app/allToys/${params.id}`)
                 
             }
         ]
@@ -87,7 +87,7 @@ const router = createBrowserRouter([
         {
             path: ':id',
             element: <UpdateData></UpdateData>,
-            loader: ({params}) => fetch(`https://ass-11-toys-server-mrincv6nn-fahimxgg.vercel.app/allToys/${params.id}`)
+            loader: ({params}) => fetch(`https://ass-11-toys-server.vercel.app/allToys/${params.id}`)
         }
        ]
 
@@ -99,7 +99,7 @@ const router = createBrowserRouter([
             {
                 path:':data',
                 element: <SearchQ></SearchQ>,
-                loader: ({params}) => fetch(`https://ass-11-toys-server-mrincv6nn-fahimxgg.vercel.app/search?query=${params.data}`)
+                loader: ({params}) => fetch(`https://ass-11-toys-server.vercel.app/search?query=${params.data}`)
             }
         ]
     }

@@ -8,7 +8,7 @@ const RecentlyAdded = () => {
 
 
     useEffect(() => {
-        fetch('https://ass-11-toys-server-mrincv6nn-fahimxgg.vercel.app/allToys')
+        fetch('https://ass-11-toys-server.vercel.app/allToys')
             .then(res => res.json())
             .then(data => {
                 const reversedToys = [...data].reverse();

@@ -30,7 +30,7 @@ const AddNew = () => {
 
 
 
-        fetch('https://ass-11-toys-server-mrincv6nn-fahimxgg.vercel.app/toys', {
+        fetch('https://ass-11-toys-server.vercel.app/toys', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -45,7 +45,7 @@ const AddNew = () => {
                         title: 'Success!',
                         text: 'Toys Added successfully',
                         icon: 'success',
-                        confirmButtonText: 'Cool'
+                        confirmButtonText: 'OK!'
                     })
                 }
             })
